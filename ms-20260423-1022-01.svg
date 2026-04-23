@@ -1,0 +1,58 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9013FE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5A623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D0021B;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Gradient -->
+  <rect width="100%" height="100%" fill="url(#gradient1)" />
+
+  <!-- Abstract Shapes representing Art -->
+  <g transform="translate(150, 200) rotate(-15)">
+    <path d="M 0 0 L 100 50 L 50 150 L -50 100 Z" fill="rgba(255,255,255,0.7)" filter="url(#softGlow)"/>
+    <circle cx="70" cy="80" r="30" fill="rgba(255,255,255,0.6)" filter="url(#softGlow)"/>
+  </g>
+
+  <g transform="translate(400, 100) rotate(30)">
+    <rect x="-80" y="-40" width="160" height="80" rx="20" fill="rgba(255,255,255,0.5)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="50" fill="rgba(255,255,255,0.4)" filter="url(#softGlow)"/>
+  </g>
+
+  <g transform="translate(600, 350) rotate(-45)">
+    <path d="M 0 0 C 50 -50 100 -20 100 50 C 100 100 50 120 0 100 C -50 80 -50 30 0 0 Z" fill="rgba(255,255,255,0.6)" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- AI Icon (Stylized Brain/Neural Network) -->
+  <g transform="translate(400, 450)">
+    <circle cx="0" cy="0" r="40" fill="#FFFFFF" stroke="#2E2E2E" stroke-width="2"/>
+    <circle cx="0" cy="0" r="30" fill="url(#gradient2)" opacity="0.8"/>
+    <circle cx="-15" cy="-15" r="10" fill="#FFFFFF"/>
+    <circle cx="15" cy="-15" r="10" fill="#FFFFFF"/>
+    <circle cx="-15" cy="15" r="10" fill="#FFFFFF"/>
+    <circle cx="15" cy="15" r="10" fill="#FFFFFF"/>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="0" y1="-25" x2="0" y2="25" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+
+  <!-- Text Overlay: "AI-Driven Niche Abstract Expressionist Art Style Generator" -->
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="24" fill="#FFFFFF" text-anchor="middle" font-weight="bold">
+    AI-Driven Niche Abstract Expressionist Art Style Generator
+  </text>
+
+  <!-- Subtle overlay for depth -->
+  <rect width="100%" height="100%" fill="rgba(0,0,0,0.1)" />
+
+</svg>
